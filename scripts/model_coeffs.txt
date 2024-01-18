@@ -1,0 +1,17 @@
+sorting	crop	cultivar	intercept	slope
+1	winterwheat	General	-0.012247311	1.012247311
+4	winterwheat	Hallfreda	0.02519477	0.97480523
+5	winterwheat	Julius	0.018213683	0.981786317
+6	winterwheat	Informer	-0.171132655	1.171132655
+9	winterwheat	Etana	-0.005472856	1.005472856
+11	winterwheat	Reform	0.022585535	0.977414465
+12	maltingbarley	General	-0.015476806	1.015476806
+13	maltingbarley	Planet	0.055153377	0.944846623
+14	maltingbarley	Laureate	-0.082763153	1.082763153
+16	maltingbarley	Irina	0.007996319	0.992003681
+17	maltingbarley	Ellinor	-0.051783625	1.051783625
+18	oats	General	0.00541389	0.99458611
+19	oats	fatima	0.039273706	0.960726294
+20	oats	belinda	0.015151121	0.984848879
+21	oats	delfin	-0.000964715	1.000964715
+22	oats	galant	-0.058337897	1.058337897
