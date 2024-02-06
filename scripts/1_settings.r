@@ -12,15 +12,13 @@ wd<-dirname(dirname(getSourceEditorContext()$path)) #now it automatically finds 
 setwd(wd)
 
 #define objects
-##input data
-index.tif<-'testdata\\L1C_ndre75_190617_block2.tif' #tif-file with index from growth stage DC69. NDRE75 = (b7-b5)/(b7+b5), where b7 and b5 are Sentinel-2 reflectance values, band7 and  band5. 
-aoi.shape <- 'testdata\\block2.shp' # polygon shapefile.
+index.tif<-file.path('in','index','ndre75.tif')
+aoi.shape <- file.path('in','aoi','aoi.shp') # polygon shape-file.
+out.folder <-file.path('out') #folder to be created under working directory. All exported files are written to this folder.
 yield.mean <- 5000 # a number, mean yield for the field (kg ha-1) from the user.
-crop<-'oats' #'winterwheat' or 'maltingbarley'
+crop<-'oats' #"oats", 'winterwheat' 'maltingbarley'
 cultivar<-'General' #see separate table which cultivars shall be available for different crops
 
-##output data
-out.folder <-'utdata' #folder to be created under working directory. All exported files are written to this folder.
 
 #run all
 source('scripts\\2_define_functions.r')
