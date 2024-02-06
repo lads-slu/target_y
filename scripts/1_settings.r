@@ -19,7 +19,6 @@ yield.mean <- 5000 # a number, mean yield for the field (kg ha-1) from the user.
 crop<-'oats' #"oats", 'winterwheat' 'maltingbarley'
 cultivar<-'General' #see separate table which cultivars shall be available for different crops
 
-
 #run all
 source('scripts\\2_define_functions.r')
 source('scripts\\3_import_data.r')
@@ -27,5 +26,3 @@ source('scripts\\4_create_yield_map.r')
 source('scripts\\5_export_data.r')
 
 ###Note: All spatial datasets must be projected onto the coordinate system EPSG:3006
-                  
-
