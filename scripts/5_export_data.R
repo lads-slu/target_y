@@ -1,9 +1,3 @@
-####ymaps####
-#version: SEE version.r
-#authors: Mats Söderström (SLU), Kristin Persson (SLU), Henrik Stadig (Entorp lantbruk)
-#Before use: read terms.r
-#########################
-
 #create output folder if it does not exist
 if(!dir.exists(out.folder))dir.create(out.folder)
 
@@ -19,31 +13,14 @@ instructions<-data.frame(how_to_scale="a+(b-a)*(tif-1)/(255-1)")
 #export yield raster
 writeRaster(scaled_yield$y, 
             filename=file.path(out.folder, 'yield.tif'), 
-            filetype='GTiff', 
-            datatype='INT1U',
-            NAflag=0,
+            filetype='GTiff', datatype='INT1U', NAflag=0,
             overwrite=T)
 
 writeRaster(scaled_yield_continuous$y, 
             filename=file.path(out.folder, 'yield_continuous.tif'), 
-            filetype='GTiff', 
-            datatype='INT1U',
-            NAflag=0,
+            filetype='GTiff', datatype='INT1U',NAflag=0,
             overwrite=T)
 
-# writeRaster(index, 
-#             filename=file.path(out.folder, 'index.tif'), 
-#             filetype='GTiff', 
-#             datatype='FLT4S',
-#             NAflag=0,
-#             overwrite=T)
-# 
-# writeRaster(yield, 
-#             filename=file.path(out.folder, 'yield_continuous_unscaled.tif'), 
-#             filetype='GTiff', 
-#             datatype='INT2S',
-#             NAflag=0,
-#             overwrite=T)
 
 #export scale parameters
 write.table(scaled_yield$params, file = file.path(out.folder, 'params.txt'), row.names = F, sep='\t')
@@ -54,4 +31,3 @@ write.table(instructions, file = file.path(out.folder, 'how_to_scale.txt'), row.
 
 #give feedback
 print('Data have been exported')
-print('Ready')

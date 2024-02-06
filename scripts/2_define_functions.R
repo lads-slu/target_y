@@ -8,3 +8,6 @@ scl<-function(x, low=1, high=254){
   params<-data.frame(a=a, b=b)
   return(list(x=x, y=y, params=params))
 }
+
+#give feedback
+print('Functions have been defined')

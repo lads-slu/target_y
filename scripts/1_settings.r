@@ -1,9 +1,3 @@
-####ymaps####
-#version: SEE version.r
-#authors: Mats Söderström (SLU), Kristin Persson (SLU), Henrik Stadig (Entorp lantbruk)
-#Before use: read terms.r
-#########################
-
 #remove all objects
 rm(list=ls())
 
@@ -29,7 +23,10 @@ cultivar<-'General' #see separate table which cultivars shall be available for d
 out.folder <-'utdata' #folder to be created under working directory. All exported files are written to this folder.
 
 #run all
-source('scripts/2_run.r')
+source('scripts\\2_define_functions.r')
+source('scripts\\3_import_data.r')
+source('scripts\\4_create_yield_map.r')
+source('scripts\\5_export_data.r')
 
 ###Note: All spatial datasets must be projected onto the coordinate system EPSG:3006
                   

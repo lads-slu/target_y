@@ -1,9 +1,3 @@
-####ymaps####
-#version: SEE version.r
-#authors: Mats Söderström (SLU), Kristin Persson (SLU), Henrik Stadig (Entorp lantbruk)
-#Before use: read terms.r
-#########################
-
 #import and set parameters
 coeffs<-read.table(file='scripts\\model_coeffs.txt', header = T, sep = "\t")
 sel<-coeffs$crop==crop & coeffs$cultivar==cultivar 

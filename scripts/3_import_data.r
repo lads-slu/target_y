@@ -1,9 +1,3 @@
-####ymaps####
-#version: SEE version.r
-#authors: Mats Söderström (SLU), Kristin Persson (SLU), Henrik Stadig (Entorp lantbruk)
-#Before use: read terms.r
-#########################
-
 #raster
 index<-rast(index.tif)
 
